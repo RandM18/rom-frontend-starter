@@ -1,4 +1,4 @@
-# 🧱 Friendly Frontend Starter
+<!-- # 🧱 Friendly Frontend Starter
 
 Стартер для современных фронтенд-проектов на базе [Minista](https://minista.qranoko.jp/) с поддержкой JSX (без React), SCSS, линтинга и автоформатирования.
 
@@ -154,4 +154,4 @@ MIT
 
 ---
 
-**Автор:** [Александр Ламков](https://www.youtube.com/@AleksanderLamkov)
+**Автор:** [Александр Ламков](https://www.youtube.com/@AleksanderLamkov) -->
