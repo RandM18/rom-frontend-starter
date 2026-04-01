@@ -68,7 +68,7 @@ body,
   чтобы избежать взаимодействие с более сложным селектором
  */
 p {
-    --paragraphMarginBottom: 24px;
+    --paragraph-margin-bottom: 24px;
 
     margin-block: 0;
 }
@@ -77,8 +77,8 @@ p {
   Внешний отступ вниз для параграфа без атрибута class,
   который расположен не последним среди своих соседних элементов
  */
-p:where(:not([class]):not(:last-child)) {
-    margin-bottom: var(--paragraphMarginBottom);
+p:where(:not([class], :last-child)) {
+    margin-bottom: var(--paragraph-margin-bottom);
 }
 
 
@@ -103,31 +103,13 @@ button {
 }
 
 html {
-    /**
-    Пригодится в большинстве ситуаций
-    (когда, например, нужно будет "прижать" футер к низу сайта)
-   */
     height: 100%;
-    /**
-    Убираем скачок интерфейса по горизонтали
-    при появлении / исчезновении скроллбара
-   */
     scrollbar-gutter: stable;
-    /**
-    Плавный скролл
-   */
     scroll-behavior: smooth;
 }
 
 body {
-    /**
-    Пригодится в большинстве ситуаций
-    (когда, например, нужно будет "прижать" футер к низу сайта)
-   */
     min-height: 100%;
-    /**
-    Унифицированный интерлиньяж
-   */
     line-height: 1.5;
 }
 
@@ -160,7 +142,7 @@ button {
  */
 :where([fill]:not([fill="none"],
         [fill^="url"])) {
-    fill: currentColor;
+    fill: currentcolor;
 }
 
 /**
@@ -170,7 +152,7 @@ button {
  */
 :where([stroke]:not([stroke="none"],
         [stroke^="url"])) {
-    stroke: currentColor;
+    stroke: currentcolor;
 }
 
 /**
@@ -185,7 +167,7 @@ svg * {
  */
 :where(table) {
     border-collapse: collapse;
-    border-color: currentColor;
+    border-color: currentcolor;
 }
 
 /**
